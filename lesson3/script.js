@@ -1,6 +1,5 @@
-let money = 6000
+const companyName = "Amazon"
+const companyRating = 5
 
 // Write your code below
-money += 3000;
-money *= 3;
-console.log (money);
+console.log(companyName + " has a customer satisfaction rating of " + companyRating);
