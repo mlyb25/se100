@@ -1,15 +1,10 @@
-const DayOneClosingPrice = "87.14";
-const DayTwoClosingPrice = "84.22";
+const TSLAClosingPrices = [230.12, 221.45, 225.61, 219.48, 227.52]
 
-// Do not modify anything above
 // Write your code below
+const totalSum = (TSLAClosingPrices[0]+TSLAClosingPrices[1]+TSLAClosingPrices[2]+TSLAClosingPrices[3]+TSLAClosingPrices[4]);
+const totalCount = 5;
 
-let DayOneClosingPriceFloat = parseFloat(DayOneClosingPrice);
-let DayTwoClosingPriceFloat = parseFloat(DayTwoClosingPrice);
-
-let totalsum = DayOneClosingPriceFloat + DayTwoClosingPriceFloat
-let totalCount = 2;
-
-let average = totalsum / totalCount ;
+const average = totalSum/totalCount;
 
 console.log(average);
+
