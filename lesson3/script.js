@@ -1,5 +1,9 @@
-const companyName = "Amazon"
-const companyRating = 5
+const companyName = "Metaa"
 
 // Write your code below
-console.log(companyName + " has a customer satisfaction rating of " + companyRating);
+let companyNameNew = companyName.substring(0,4);
+console.log(companyNameNew);
+
+console.log(companyNameNew.toUpperCase());
+
+
