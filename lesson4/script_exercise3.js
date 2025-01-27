@@ -17,4 +17,23 @@ const MSFTStockClosingPrices = [
     // Write your code below
     // Expected Output = The total sum of closing prices of MSFT is 2744.47
 
-    
+let totalSum=0;
+for (let value of MSFTStockClosingPrices){
+    totalSum += value["Monday"]+
+                value["Tuesday"]+
+                value["Wednesday"]+
+                value["Thursday"]+
+                value["Friday"];
+}
+   console.log("The total sum of closing prices of MSFT is " + totalSum.toFixed(2));
+   
+
+
+    //console.log("The total sum of closing prices of MSFT is " + totalSum.toFixed(2));
+
+// Alternate
+    // totalSum += value["Monday"];
+    // totalSum += value["Tuesday"];
+    // totalSum += value["Wednesday"];
+    // totalSum += value["Thursday"];
+    // totalSum += value["Friday"];

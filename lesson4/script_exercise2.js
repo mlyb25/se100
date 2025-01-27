@@ -19,7 +19,7 @@ const MSFTStockClosingPrices = [
 
     let totalSum=0;
     for (let i=0 ; i < MSFTStockClosingPrices.length; i++){
-        totalSum += MSFTStockClosingPrices [i]["Monday"]+
+        totalSum += MSFTStockClosingPrices [i]["Monday"]+ // without +, need to repeat totalSum += for all the remaining lines
                     MSFTStockClosingPrices [i] ["Tuesday"]+
                     MSFTStockClosingPrices [i] ["Wednesday"]+
                     MSFTStockClosingPrices [i] ["Thursday"]+
