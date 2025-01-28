@@ -19,12 +19,12 @@ const MSFTStockClosingPrices = [
 
 
 
-let i=0;
+let i = 0;
 let totalSum = 0;
 while (i<=MSFTStockClosingPrices.length){
     for (let day of MSFTStockClosingPrices) {
         for (let price in day) {
-            totalSum += (day[price]) ;
+            totalSum += (day[price]);
         }
     }
 }
