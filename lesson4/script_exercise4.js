@@ -18,14 +18,15 @@ const MSFTStockClosingPrices = [
     // Expected Output = The total sum of closing prices of MSFT is 2744.47
 
 
-let totalSum = 0;
-let i = 0 ;
-while (i <= MSFTStockClosingPrices.length) {
-    let value = MSFTStockClosingPrices [i] ;
-    for (let key in value) {
-        totalSum += value [key];
-    } i ++;
-}
-
-console.log("The total sum of closing prices of MSFT is " + totalSum.toFixed(2));
+    let i = 0;
+    let totalSum = 0;
+    while (i<=MSFTStockClosingPrices.length){
+        for (let day of MSFTStockClosingPrices) {
+            for (let price in day) {
+                totalSum += (day[price]);
+            }
+        }
+    }
+    
+    console.log (totalSum.toFixed(2));
 
