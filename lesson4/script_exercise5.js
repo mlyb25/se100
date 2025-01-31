@@ -7,14 +7,14 @@ function getBetween() {
 	// ...
 	// ...
 
-let totalSum = 0;
-for (let value of MSFTStockClosingPrices) {
-	if (value >= 254 && value <= 257) {
-totalSum += 1;
+let totalCount = 0;
+for (let price of MSFTStockClosingPrices) {
+	if ((price > 254) && (price < 257)) {
+totalCount += 1;
 	}
 	
 	}
-	console.log ("Number of closing prices between 254 and 257: " + totalSum);
+	console.log ("Number of closing prices between 254 and 257: " + totalCount);
 
 
 }

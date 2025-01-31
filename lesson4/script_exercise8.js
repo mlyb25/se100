@@ -8,5 +8,9 @@ const StockDailyPerformance = [3.1, 2.4, 1.1, 2.8, 4.5, 2.7]
 // ..
 
 // Do not modify this code:
-sortNumbersAscending(StockDailyPerformance);
 
+
+const sortNumbersAscending = (data) => data.sort ();
+
+let result = sortNumbersAscending (StockDailyPerformance);
+console.log(result);
