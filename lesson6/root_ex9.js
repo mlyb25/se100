@@ -16,10 +16,9 @@ function WelcomeMessage(props) {
 
 function WelcomeMessagesList() {
   return <ul>
-    {
-      users.map(user => (
-        user.country === 'Singapore' ?
-          <li>Majulah Singapura, {user.name}!</li> :
+    {users.map(user => (
+        user.country === 'Singapore'&& 
+          <li key={user.name}> Majulah Singapura, {user.name}!</li> ||
           <WelcomeMessage key={user.name} name={user.name} country={user.country} />
       ))
     }
