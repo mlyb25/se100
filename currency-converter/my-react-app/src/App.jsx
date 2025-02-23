@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import Modal from 'react-modal';
 import './App.css';
 
@@ -6,6 +6,10 @@ Modal.setAppElement('#root');
 
 function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  useEffect(() => {
+    console.log("Making API Request");
+  }, []);
 
 function handleMouseOver () {
   setModalIsOpen(true);
