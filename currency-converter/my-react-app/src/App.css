@@ -40,3 +40,61 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Modal styling */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.4) !important; /* Dim the background */
+}
+
+/* Center modal at the top */
+.ReactModal__Content {
+  position: absolute;
+  top: 10%; /* Adjust this value for fine-tuning */
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #fff !important;
+  color: #000 !important;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modal-content {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end; /* Right-align button */
+}
+
+.modal-button {
+  background-color: #d0d5ff; /* Light blue similar to the image */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.modal-button:hover {
+  background-color: #b0b8ff;
+}
+
+#currencySelect {
+  padding: 10px 20px 10px 10px; /* Add more padding to the right */
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}
